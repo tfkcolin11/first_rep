@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>javaScript</title>
+		<link rel='stylesheet' href='style.css' />
+	</head>
+	<body>
+		<div id="ecran">
+			<header>
+				<div id="logo">
+					<img src="image/logo2.png" alt="">
+				</div>
+				<h1 id='titre'>test JS</h1>
+				<nav>
+					<ul>
+						<li><a href="#">HOME</a></li>
+						<li><a href="#">FORUM</a></li>
+						<li><a href="canva.html">REQUETTE</a></li>
+						<li><a href="#">TELECHARGEMENT</a></li>
+					</ul>
+				</nav>
+			</header>
+			
+			<section>
+				<div id="banniere">
+					<div><span>Les meilleurs annimés de 2019</span><a href="#" id="description">cliquez-ici<img src="image/boutton.png" alt="" id="fleche"/></a></div>
+				</div>
+				
+				<div id="image"></div>
+				<p id="pimage">cliquez-ici</p>
+				
+				<article>
+					<div id="tp">
+						<h1>INSCRIPTION</h1>
+						<p>Nous aurrons besoin de certaines de vos informations personnelles pour continuer:</p>
+						<form id="myForm">
+							<fieldset>
+								<legend>Vos Coordonées:</legend>
+								<label for="nom">Nom:</label>
+								<input type="text" size="15" maxlength="20" placeholder="EX: colin" id="nom" autofocus/>
+								<br />
+								<label for="prenom">Prenom:</label>
+								<input type="text" size="15" maxlength="20" placeholder="EX: kevin" id="prenom" />
+								<br />
+								<label for="pseudo">Pseudo:</label>
+								<input type="text" size="15" maxlength="10" placeholder="EX: Lelouch11" id="pseudo" />
+								<br />
+							</fieldset>
+							
+							<fieldset required>
+								<legend>Vos Caractéristiques:</legend>
+								<label for="sexe" style="margin-right: 5px;">Sexe:</label><br />
+								<input type="radio" value="Homme" id="homme" name="sexe" /><label for="homme">Homme</label><br />
+								<input type="radio" value="Femme" id="Femme" name="sexe" /><label for="Femme">Femme</label>
+								<br />
+								
+								<label for="age">Age:</label>
+								<input type="number" min="0" max="120" id="age" />
+								<br />
+							</fieldset>
+							
+							<fieldset>
+								<legend>Vos Contacts:</legend>
+								<label for="tel">entrez votre numero de telephone</label>
+								<input type="tel" id="tel" />
+								<br />
+								<label for="email" required>entrez votre adresse e-mail</label>
+								<input type="email" id="email" />
+								<br />
+								<label for="pays">Pays:</label>
+								<select id="pays">
+									<optgroup label="Afrique">
+										<option value="Cameroun">Cameroun</option>
+										<option value="Nigeria">Nigeria</option>
+										<option value="Gabon">Gabon</option>
+										<option value="Afrique-du-sud">afrique du sud</option>
+										<option value="Niger">Niger</option>
+										<option value="Angola">Angola</option>							
+									</optgroup>
+									<optgroup label="Europe">
+										<option value="France">France</option>
+										<option value="Angletaire">Angletaire</option>
+										<option value="Italie">Italie</option>
+										<option value="Rome">Rome</option>
+									</optgroup>
+									<optgroup label="Asie">
+										<option value="Chine">Chine</option>
+										<option value="Japon">Japon</option>
+										<option value="Corée">Corée</option>
+									</optgroup>
+								</select>
+							</fieldset>
+							<br />
+							
+							<fieldset required>
+								<legend>Securité:</legend>
+								<label for="password">Password:</label>
+								<input type="password" placeholder="EX: Ornelapatricia1" id="password" />
+								<br />
+								<label for="Cpassword">Confirm Password:</label>
+								<input type="password" placeholder="EX: Ornelapatricia1" id="Cpassword" />
+								<br />
+							</fieldset>
+							
+							<label for="commentaire">Commentaire:</label><br />
+							<textarea id="commentaire" cols="30" rows="7" placeholder="entrez une description de vos capacités."></textarea>
+							
+							<input type="submit" value="envoyer" /><input type="Reset" value="Réinitialiser" />
+						</form>
+					</div>
+					
+					<aside>
+						<form>
+						<label for="search">chercher:</label>
+							<input type="search" id="search" />
+						</form>
+						
+						<h1>Liste Des Métiers</h1>
+						<ul id="profession">
+							<li><a href="#">ElectroTechnique</a></li>
+							<li><a href="#">Electronique</a></li>
+							<li><a href="#">Informatique</a></li>
+							<li><a href="#">Comptabilité</a></li>
+							<li><a href="#">Génie Civil</a></li>
+							<li><a href="#">Réseau Industriel</a></li>
+						</ul>
+						
+						<h1>Nos Contacts</h1>
+						<ul id="lien">
+							<li><a href="#"><img src="image/logoFB.png" alt="facebook" title="facebook"></a></li>
+							<li><a href="#"><img src="image/logoflck.png" alt="flck" title="flck"></a></li>
+							<li><a href="#"><img src="image/logorss.png" alt="rss" title="rss"></a></li>
+							<li><a href="#"><img src="image/logoTWT.png" alt="Twitter" title="Twitter"></a></li>
+							<li><a href="#"><img src="image/logoVM.png" alt="vime" title="vime"></a></li>
+						</ul>
+					</aside>				
+				</article>
+			</section>
+			
+			<footer>
+				<div id="music">
+					<audio id="song" controls >
+						<source src="song/Another.mp3"></source>
+						Veillez mettre a jour votre navigateur
+					</audio>
+					<button class="control" onclick="play('song', this)">play</button><button class="control" onclick="resume('song', this)">stop</button>
+					<span class="volume">
+					<a class="stick1" onclick="volume('song', 0)">I</a>
+					<a class="stick2" onclick="volume('song', 0.3)">I</a>
+					<a class="stick3" onclick="volume('song', 0.5)">I</a>
+					<a class="stick4" onclick="volume('song', 0.7)">I</a>
+					<a class="stick5" onclick="volume('song', 1)">I</a>
+					</span>
+				</div>
+				
+				<div id="video">
+					<video id="vide" src="video/Courage.mp4" preload="metadata">
+						Veillez mettre a jour votre navigateur
+					</video>
+					<button class="control" onclick="play('vide', this)">play</button><button class="control" onclick="resume('vide', this)">stop</button>
+					<span class="volume">
+					<a class="stick1" onclick="volume('vide', 0)">I</a>
+					<a class="stick2" onclick="volume('vide', 0.3)">I</a>
+					<a class="stick3" onclick="volume('vide', 0.5)">I</a>
+					<a class="stick4" onclick="volume('vide', 0.7)">I</a>
+					<a class="stick5" onclick="volume('vide', 1)">I</a>
+					</span>
+
+				</div>
+				
+			</footer>
+			
+			<script src="code.js"></script>
+		</div>
+	</body>
+</html>
